@@ -84,7 +84,13 @@ Xcode "build post-action" (Recommended)
     .. code-block:: bash
 
       $ python2 -mxUnique "${PROJECT_FILE_PATH}/project.pbxproj"
-
+      
+    if you use `Cocoapods <http://cocoapods.org/>`__, add the extra following commands:
+    
+    .. code-block:: bash
+    
+      $ python2 -mxUnique "${PODS_ROOT}/Pods.xcodeproj/project.pbxproj"
+      
 #.  click ``Close`` and it's all done.
 #.  Next time when you Build or Run the project, xUnique would be
     triggered after build success. If the build works, you could commit
